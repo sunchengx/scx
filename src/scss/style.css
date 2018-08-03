@@ -1,0 +1,347 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: 0;
+  font-family: STHeitiSC-Light;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html,
+body,
+form,
+fieldset,
+p,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  -webkit-text-size-adjust: none;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  font-family: arial, sans-serif;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+ins,
+a {
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  display: inline-block;
+}
+
+input,
+textarea {
+  border: none;
+  background: none;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
+  -ms-tap-highlight-color: transparent;
+  -o-tap-highlight-color: transparent;
+}
+
+/*html {
+    font-size: $browser-default-font-size;
+}*/
+html {
+  font-size: 37.5px;
+}
+
+.wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.header,
+.footer {
+  width: 100%;
+  height: 1.33333rem;
+}
+
+.section {
+  width: 100%;
+  -webkit-flex: 1 1 0%;
+  flex: 1 1 0%;
+}
+
+.header h2 {
+  font-size: 0.48rem;
+  line-height: 1.33333rem;
+  padding-left: 0.4rem;
+}
+
+.footer {
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  font-size: 0.37333rem;
+}
+
+.footer dl {
+  width: 20%;
+  height: 100%;
+  text-align: center;
+}
+
+.footer dl dt {
+  margin-top: 0.13333rem;
+}
+
+.footer dl dt i {
+  font-size: 0.53333rem;
+}
+
+.section {
+  background: #F7F7F7;
+}
+
+.section .banner {
+  width: 100%;
+  height: 5.33333rem;
+}
+
+.section .banner img {
+  width: 100%;
+  height: 100%;
+}
+
+.section .nav {
+  width: 100%;
+  height: 2.66667rem;
+  background: #fff;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  font-size: 0.48rem;
+}
+
+.section .nav dl {
+  width: 20%;
+  height: 100%;
+  text-align: center;
+}
+
+.section .nav dl dt {
+  margin-top: 0.4rem;
+}
+
+.section .nav dl dt i {
+  font-size: 0.93333rem;
+}
+
+.section .nav dl dd {
+  margin-top: 0.29333rem;
+}
+
+.section .task {
+  margin-top: 0.26667rem;
+  width: 100%;
+  height: 4rem;
+  background: #fff;
+}
+
+.section .task .top {
+  width: 100%;
+  font-size: 0.53333rem;
+  text-align: center;
+  line-height: 1.06667rem;
+}
+
+.section .task .content {
+  width: 100%;
+  height: 2.93333rem;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.section .task .content .content_left {
+  width: 35%;
+  height: 70%;
+  border: 0.02667rem solid #F1E0C3;
+  line-height: 1.06667rem;
+}
+
+.section .task .content .content_left h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 0.48rem;
+  background: #F8F3EB;
+}
+
+.section .task .content .content_left p {
+  width: 100%;
+  font-size: 0.48rem;
+  text-align: center;
+}
+
+.section .task .content .content_right {
+  margin-left: 0.4rem;
+  width: 55%;
+  height: 70%;
+  border: 0.02667rem solid #F1E0C3;
+}
+
+.section .task .content .content_right h2 {
+  width: 100%;
+  font-size: 0.48rem;
+}
+
+.section .task .content .content_right p {
+  width: 2.13333rem;
+  font-size: 0.48rem;
+  background: #BE8E40;
+  height: 0.8rem;
+  color: #fff;
+  line-height: 0.8rem;
+  text-align: center;
+  border-radius: 0.13333rem;
+}
